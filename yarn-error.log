@@ -1,0 +1,89 @@
+Arguments: 
+  /home/bianca/.nvm/versions/node/v12.10.0/bin/node /home/bianca/.nvm/versions/node/v12.10.0/bin/yarn add -D @types/styled-systems
+
+PATH: 
+  /home/bianca/.nvm/versions/node/v12.10.0/bin:/home/bianca/.zinit/polaris/sbin:/home/bianca/.zinit/polaris/bin:/home/bianca/.rvm/gems/ruby-2.6.6/bin:/home/bianca/.rvm/gems/ruby-2.6.6@global/bin:/home/bianca/.rvm/rubies/ruby-2.6.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bianca/.rvm/bin:/home/bianca/.rvm/bin:/home/bianca/.rvm/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fstyled-systems: Not found
+      at Request.params.callback [as _callback] (/home/bianca/.nvm/versions/node/v12.10.0/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/bianca/.nvm/versions/node/v12.10.0/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:209:13)
+      at Request.<anonymous> (/home/bianca/.nvm/versions/node/v12.10.0/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:209:13)
+      at IncomingMessage.<anonymous> (/home/bianca/.nvm/versions/node/v12.10.0/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:298:28)
+      at IncomingMessage.emit (events.js:214:15)
+      at endReadableNT (_stream_readable.js:1178:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "slaca",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@emotion/react": "^11.9.0",
+      "@emotion/styled": "^11.8.1",
+      "@mui/icons-material": "^5.6.0",
+      "@mui/material": "^5.6.0",
+      "@mui/styled-engine-sc": "^5.5.2",
+      "@testing-library/jest-dom": "^5.16.4",
+      "@testing-library/react": "^12.1.4",
+      "@testing-library/user-event": "^13.5.0",
+      "@types/jest": "^27.4.1",
+      "@types/node": "^16.11.26",
+      "@types/react": "^17.0.44",
+      "@types/react-dom": "^17.0.15",
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0",
+      "react-scripts": "5.0.0",
+      "reflexbox": "^4.0.6",
+      "styled-components": "^5.3.5",
+      "typescript": "^4.6.3",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@types/reflexbox": "^4.0.4",
+      "@types/styled-components": "^5.1.25"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
