@@ -1,42 +1,44 @@
 //dependencies
-import React, { useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react'
 
-import { getRefValue } from '../../hooks';
-import { AccordionData } from './type';
-
-//componentes
-import { BoxDetails, BoxTop, Container } from './style'
-
-//import AccordionComments from './Accordion'
-
-import Text from '../Text'
-
-import './style.css'
+import Card from '../Card'
 
 export default function Discussion(){
-  var btn = document.getElementById('btn-div');
-  var container = document.querySelector('.container');
-  btn.addEventListener('click', function() {
+  const [step, setStep] = useState<'info' | 'create' | 'edit'>('info')
 
-    if(container.style.display === 'block') {
-        container.style.display = 'none';
-    } else {
-        container.style.display = 'block';
-      }
-  });
+  const stepSection = () => {
+    switch (step) {
+      case 'info':
+        return (
+          <div onClick={() => setStep('create')}>
+            Olá sou a info
+          </div>
+        )
+      case 'create':
+        return (
+          <div onClick={() => setStep('edit')}>
+            Olá sou a create
+          </div>
+        )
+        case 'edit':
+        return (
+          <div onClick={() => setStep('info')}>
+            Olá sou a edit
+          </div>
+        )
+        default:
+          return (
+            <div onClick={() => setStep('create')}>
+              Olá sou a info
+            </div>
+          )
+    }
+  }
+
 
   return (
-    <BoxDetails>
-      <BoxTop>
-        <Text variant="title"> Discussões </Text>
-      </BoxTop>
-      <Container>
-        <div className="container">
-          <p>Esta div não será exibida</p>
-        </div>
-      <button id='btn-div'>Ocultar/mostrar div</button>
-      </Container>
-    </BoxDetails>
+    <Card title="Discussões">
+      {stepSection()}
+    </Card>
   )
 }

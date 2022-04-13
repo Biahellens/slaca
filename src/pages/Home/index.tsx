@@ -4,7 +4,7 @@ import React from 'react'
 //componentes
 import { IconButton } from '@mui/material'
 
-import { Button, Details, Menu, ResponsiveAppBar, Resume, Text } from '../../components'
+import { Button, Details, Discussion, Menu, ResponsiveAppBar, Resume, Text } from '../../components'
 
 import { Container, Wrapper } from './style'
 
@@ -56,6 +56,10 @@ export function Home(){
 
           <Container marginTop='4vh'>
             <Resume />
+          </Container>
+
+          <Container marginTop='4vh'>
+            <Discussion />
           </Container>
 
         </Container>

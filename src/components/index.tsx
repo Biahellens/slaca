@@ -1,4 +1,5 @@
 import Details from './Details'
+import Discussion from './Discussion'
 import Menu from './Menu'
 import ResponsiveAppBar from './AppBar'
 import Resume from './Resume'
@@ -10,6 +11,7 @@ import Button from './Button'
 export{
   Button,
   Details,
+  Discussion,
   Menu,
   ResponsiveAppBar,
   Resume,
