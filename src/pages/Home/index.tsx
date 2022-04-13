@@ -1,10 +1,10 @@
-//dependencias
+//dependencies
 import React from 'react'
 
 //componentes
 import { IconButton } from '@mui/material'
 
-import { Button, Details, Menu, ResponsiveAppBar, Text } from '../../components'
+import { Button, Details, Menu, ResponsiveAppBar, Resume, Text } from '../../components'
 
 import { Container, Wrapper } from './style'
 
@@ -25,28 +25,39 @@ export function Home(){
 
         <Container padding='3vh'>
           <Container display='flex' justifyContent='space-between'>
-            <Container  width={[0.7, 0.6]} >
+            <Container  width={[1/2, 0.7, 0.6]} >
               <h3 style={{color: '#ED7839'}}>
                 Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP
               </h3>
             </Container>
 
-            <Container alignItems='flex-end'>
-              <Button variant="primary"> <img src={download} width='20px'/> Dowload</Button>
-              <Button variant="secondary"> <img src={favoritar} width='20px'/></Button>
-              <Button variant="secondary"> <img src={doi} width='20px'/></Button>
+            <Container flex-wrap='wrap'>
+              <Container width={[0.2, 1]} alignItems='flex-end'>
+                <Button variant="primary"> <img src={download} width='20px'/> Dowload</Button>
+                <Button variant="secondary"> <img src={favoritar} width='20px'/></Button>
+                <Button variant="secondary"> <img src={doi} width='20px'/></Button>
+              </Container>
+
+              <Container width={[1/2, 1]} padding='2vh' alignItems='flex-end'>
+                <Text variant='span'>COMO CITAR ESSE TRABALHO?</Text>
+              </Container>
             </Container>
           </Container>
 
-          <Container display='flex'  justifyContent='space-between'>
+          <Container display='flex'  justifyContent='space-between' >
 
-            <Container width={[1, 3/4]} paddingTop='1vh'>
+            <Container  paddingTop='1vh'>
               <img src={videoApresentacao} width='700px'/>
             </Container>
             <Container >
               <Details />
             </Container>
           </Container>
+
+          <Container marginTop='4vh'>
+            <Resume />
+          </Container>
+
         </Container>
       </Container>
     </Wrapper>

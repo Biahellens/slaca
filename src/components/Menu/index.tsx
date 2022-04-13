@@ -1,4 +1,4 @@
-//dependencias
+//dependencies
 import React, { useState } from 'react'
 
 //components

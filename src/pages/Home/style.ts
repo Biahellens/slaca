@@ -11,4 +11,6 @@ export const Wrapper = styled(Flex)`
   flex-wrap: wrap;
 `
 
-export const Container = styled(Box)<BoxProps>``
+export const Container = styled(Box)<BoxProps>`
+  position: relative;
+`

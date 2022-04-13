@@ -17,6 +17,12 @@ const variants = {
       color: '#FFFFFF',
       bg: '#ED7839',
       width: '40px',
+    },
+
+    clicked: {
+      color: '#ED7839',
+      bg: 'none',
+      width: '10px',
     }
   }
 }

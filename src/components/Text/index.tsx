@@ -1,5 +1,7 @@
+//dependencies
 import React from 'react'
 
+//componentes
 import { TextStyled } from './style'
 
 import { TextProps } from './interface'

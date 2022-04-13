@@ -1,4 +1,7 @@
+//dependencies
 import React from 'react'
+
+//componentes
 
 import { ButtonStyled } from './style'
 

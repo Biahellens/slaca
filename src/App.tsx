@@ -1,5 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
+//dependencies
+import React from 'react'
+
+//pages
 import { Home } from './pages'
 
 function App() {
