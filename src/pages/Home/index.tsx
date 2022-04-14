@@ -13,6 +13,7 @@ import download from '../../assets/images/download.svg'
 import favoritar from '../../assets/images/favoritar.svg'
 import doi from '../../assets/images/doi.svg'
 import videoApresentacao from '../../assets/images/video-apresentacao.png'
+import imageFooter from '../../assets/images/imagem-footer.png'
 
 export function Home(){
   return(
@@ -61,7 +62,9 @@ export function Home(){
           <Container marginTop='4vh'>
             <Discussion />
           </Container>
-
+          <Container marginTop='40px' display='flex' justifyContent='center'>
+            <img src={imageFooter} width='1000px' />
+          </Container>
         </Container>
       </Container>
     </Wrapper>
