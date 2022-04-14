@@ -34,7 +34,7 @@ export default function Discussion(){
         default:
           return (
             <div onClick={() => setStep('create')}>
-              Olá sou a info
+              <CardInfo />
             </div>
           )
     }
