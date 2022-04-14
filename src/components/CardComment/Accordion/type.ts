@@ -1,7 +1,7 @@
 //dependencies
 import { ReactNode } from 'react'
 
-export type CardData = {
+export type AccordionData = {
   title: string;
-  children: Element;
+  content: ReactNode;
 }

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 //components
 import { BoxMenu, BoxImage, Button, BoxTop, Paper } from './style'
 
+//image
 import slaca from '../../assets/images/slaca.png'
 
 export default function Menu() {

@@ -34,7 +34,7 @@ function AccordionItem({
 
   return (
     <Container className={`accordion-item ${isOpen ? 'active' : ''}`}>
-      <Container justifyContent="space-between">
+      <Container justifyContent="space-between" className="accordion-btn" onClick={btnOnClick}>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis
@@ -46,9 +46,7 @@ function AccordionItem({
           scelerisque, ac gravida eros vestibulum.
         </Text>
         <a
-          className="accordion-btn"
           style={{ marginLeft: '2px' }}
-          onClick={btnOnClick}
         >
           <Text variant='span'>ver mais</Text>
         </a>

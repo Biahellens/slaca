@@ -2,48 +2,64 @@
 import React, { useState } from 'react'
 
 //componentes
-import { BoxButtons, BoxDecoration, BoxDetails, BoxImage, BoxInfo, BoxText, BoxTitle, Container } from './style'
+import { Container } from './style'
 
-import Text from '../Text'
+//componentes
+import Accordion from './Accordion'
+
+import { Comments, CommentsAC } from './Comments'
 
 //images
-import favorito from '../../assets/images/favorito.svg'
-import maisInformacoes from '../../assets/images/maisInformacoes.svg'
+import check from '../../assets/images/check.svg'
 
 export default function CardComment() {
+  const accordionItems = [
+    {
+      title: 'Accordion comentarios',
+      content: (
+        <Container>
+          <CommentsAC  name='Adriano da Silva'
+          comment='Resposta do autor é aqui. Relato inscreve-se no campo da
+          análise da dimensão e impacto de processo formativo situado impacto
+          de processo formativo processo resente relato inscreve-se no campo da
+          análise da dimensão e impacto de processo formativo situado impacto de
+          processo formativo processo.'
+          type='Autor'/>
+
+          <Comments  name='Carlos Henrique Santos'
+          comment='Consegui entender melhor agora! Parece que a variação da
+          análise da dimensão e impacto de processo formativo situado impacto
+          de processo formativo.
+
+          Obrigada pela resposta, muito interessante o seu trabalho! '
+          />
+
+          <CommentsAC  name='Carmila Ferreira Andrade'
+          comment='Também ínteressante lembrar que o relato inscreve-se no campo
+           da análise da dimensão e impacto de processo formativo situado impacto
+           de processo formativo processo resente relato inscreve-se no campo da
+           análise da dimensão e impacto de processo formativo situado impacto de
+           processo formativo processo.
+
+          Situado impacto de processo formativo processo resente relato inscreve-se
+          no campo da análise da dimensão e impacto de processo formativo situado
+          impacto de processo formativo processo.'
+          type='Coautor'/>
+
+          <CommentsAC  name='Ana Carolina'
+          comment='Resposta do autor é aqui. Relato inscreve-se no campo da análise
+          da dimensão e impacto de processo formativo situado impacto de processo
+          formativo processo resente relato inscreve-se no campo da análise da
+          dimensão e impacto de processo formativo situado impacto de processo
+          formativo processo.'
+          type='Coautor'/>
+        </Container>
+      ),
+    },
+  ]
   return (
     <Container>
-      <BoxDetails>
-        <BoxTitle>
-           <Text variant="title">Assunto da pergunta aparece aqui</Text>
-        </BoxTitle>
-        <BoxText>
-          <Text>Carlos Henrique Santos</Text>
-
-          <Text>Comecinho da pergunta aparece aqui resente relato inscreve-se
-            no campo da análise da dimensão e impacto de processo formativo
-            situado impacto de processo formativo processo...</Text>
-        </BoxText>
-
-        <BoxButtons>
-          <BoxDecoration>
-            <BoxImage>
-              <img src={maisInformacoes} width='4px' />
-            </BoxImage>
-            <BoxImage>
-              <img src={favorito} width='30px' />
-            </BoxImage>
-            <BoxInfo>
-              <Text>1 Like</Text>
-            </BoxInfo>
-            <BoxInfo>
-              <Text>1 Resposta</Text>
-            </BoxInfo>
-          </BoxDecoration>
-
-        </BoxButtons>
-
-      </BoxDetails>
+      <Accordion items={accordionItems} />
     </Container>
   )
 }

@@ -10,19 +10,19 @@ const variants = {
     primary: {
       color: '#FFFFFF',
       bg: '#ED7839',
-      width: '140px',
-    },
-
-    secondary: {
-      color: '#FFFFFF',
-      bg: '#ED7839',
-      width: '40px',
+      minwidth: '140px',
     },
 
     clicked: {
       color: '#ED7839',
       bg: 'none',
       width: '10px',
+    },
+
+    discussion: {
+      color: '#FFFFFF',
+      minWidth: '130px',
+      backgroundImage: 'linear-gradient(#FFB354, #EE7A3A)',
     }
   }
 }
@@ -35,7 +35,8 @@ export const ButtonStyled = styled('button')<ButtonProps>(
     borderColor: '#ED7839',
     borderRadius: '4px',
 
-    display: 'inline-block',
+    display: 'flex',
+    justifyContent: 'center',
     textAlign: 'center',
     margin: '2px',
 

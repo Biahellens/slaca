@@ -1,20 +1,19 @@
 //dependencies
 import React, { useState } from 'react'
-import styled from 'styled-components'
 
 //componentes
-import { BoxDetails, BoxTop, Container } from './style'
-
 import Accordion from './Accordion'
 
 import Text from '../Text'
 
+import Card from '../Card'
+
 export default function Resume() {
   const accordionItems = [
     {
-      title: 'Accordion Item #1',
+      title: 'Accordion resumos',
       content: (
-        <div style={{textAlign: 'justify'}}>
+        <div style={{textAlign: 'justify', justifyContent:'flex-start',   flexWrap: 'wrap'}}>
           <div>
             <Text>
               Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna.
@@ -58,13 +57,8 @@ export default function Resume() {
     },
   ]
   return (
-    <BoxDetails>
-      <BoxTop>
-        <Text variant="title"> Resumo </Text>
-      </BoxTop>
-      <Container display="flex" justifyContent="felx-start" padding="2vh">
-        <Accordion items={accordionItems} />
-      </Container>
-    </BoxDetails>
+    <Card title="Resumo">
+      <Accordion items={accordionItems} />
+    </Card>
   )
 }

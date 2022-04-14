@@ -22,8 +22,8 @@ export const BoxTitle = styled(Box)<BoxProps>`
 `
 
 export const Container = styled(Box)<BoxProps>`
-  flex-wrap: wrap;
   display:flex;
-  justify-content:flex-start;
+  flex-wrap: wrap;
+
   padding:2vh;
 `

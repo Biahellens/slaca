@@ -1,7 +1,6 @@
 //dependencies
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { CardData } from './type';
 
 //componentes
 import { BoxDetails, BoxTitle, Container } from './style'

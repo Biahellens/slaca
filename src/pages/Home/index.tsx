@@ -23,7 +23,7 @@ export function Home(){
       <Container width={[1/2, 0.8]}>
         <ResponsiveAppBar />
 
-        <Container padding='3vh'>
+        <Container padding='3vh' minWidth='1100px'>
           <Container display='flex' justifyContent='space-between'>
             <Container  width={[1/2, 0.7, 0.6]} >
               <h3 style={{color: '#ED7839'}}>
@@ -32,10 +32,10 @@ export function Home(){
             </Container>
 
             <Container flex-wrap='wrap'>
-              <Container width={[0.2, 1]} alignItems='flex-end'>
-                <Button variant="primary"> <img src={download} width='20px'/> Dowload</Button>
-                <Button variant="secondary"> <img src={favoritar} width='20px'/></Button>
-                <Button variant="secondary"> <img src={doi} width='20px'/></Button>
+              <Container width={[1]} display='flex' alignItems='center' marginLeft='30px'>
+                <Button> <img src={download} width='20px'/> Dowload</Button>
+                <Button> <img src={favoritar} width='20px'/></Button>
+                <Button> <img src={doi} width='20px'/></Button>
               </Container>
 
               <Container width={[1/2, 1]} padding='2vh' alignItems='flex-end'>

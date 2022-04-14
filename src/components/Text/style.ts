@@ -9,6 +9,7 @@ const variants = {
     primary: {
       fontSize: '12px',
       color: 'text.main',
+      marginTop: '4px',
     },
 
     primaryBold: {
@@ -23,14 +24,28 @@ const variants = {
     },
 
     title: {
-      fontSize: '20px',
-      color: 'text.dark',
+      fontSize: '18px',
+      color: '#ED7839',
       fontWeight: 'bold',
     },
 
     span: {
       fontSize: '14px',
       color: '#ED7839',
+    },
+
+    input: {
+      fontSize: '16px',
+      color: '#ED7839',
+      fontWeight: 'bold',
+      marginTop: '10px',
+    },
+
+    link: {
+      fontSize: '14px',
+      color: '#ED7839',
+      marginTop: '40px',
+      textDecoration: 'underline'
     }
   }
 }

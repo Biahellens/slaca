@@ -19,7 +19,7 @@ export default function CardInfo(){
     <Container>
       <BoxContent>
       <BoxTitle>
-        <Text variant='span'>Compartilhe suas ideias ou dúvidas com os autores!</Text>
+        <Text variant='title'>Compartilhe suas ideias ou dúvidas com os autores!</Text>
       </BoxTitle>
 
       <BoxImages>
@@ -35,7 +35,7 @@ export default function CardInfo(){
       </BoxImages>
 
       <BoxText>
-        <Text>Sabia que o maior estímulo no desenvolvimento científico e cultural
+        <Text variant='secondary'>Sabia que o maior estímulo no desenvolvimento científico e cultural
           é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</Text>
       </BoxText>
 

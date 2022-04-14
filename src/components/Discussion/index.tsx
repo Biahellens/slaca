@@ -1,7 +1,12 @@
 //dependencies
 import React, { useState } from 'react'
 
+//componentes
 import Card from '../Card'
+import CardInfo from '../CardInfo'
+import CardCreate from '../CardCreate'
+import CardEdit from '../CardEdit'
+import CardComment from '../CardComment'
 
 export default function Discussion(){
   const [step, setStep] = useState<'info' | 'create' | 'edit'>('info')
@@ -11,19 +16,19 @@ export default function Discussion(){
       case 'info':
         return (
           <div onClick={() => setStep('create')}>
-            Olá sou a info
+           <CardInfo />
           </div>
         )
       case 'create':
         return (
           <div onClick={() => setStep('edit')}>
-            Olá sou a create
+            <CardCreate />
           </div>
         )
         case 'edit':
         return (
           <div onClick={() => setStep('info')}>
-            Olá sou a edit
+            <CardEdit />
           </div>
         )
         default:
@@ -39,6 +44,7 @@ export default function Discussion(){
   return (
     <Card title="Discussões">
       {stepSection()}
+      <CardComment />
     </Card>
   )
 }

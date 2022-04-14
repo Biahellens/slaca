@@ -18,7 +18,7 @@ export default function CardInfo(){
     <Container minWidth='980px'>
       <BoxContent>
       <BoxTitle>
-        <Text>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</Text>
+        <Text variant='secondary'>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</Text>
       </BoxTitle>
 
       <BoxInput>
