@@ -4,13 +4,10 @@ import React from 'react'
 //componentes
 import {
   BoxContent,
-  BoxDetails,
   BoxText,
-  BoxTextComment,
   BoxTitle,
   BoxImage,
   BoxImages,
-  BoxOpacity,
   Container
 } from './style'
 
@@ -56,31 +53,6 @@ export default function CardInfo(){
        <Button variant='discussion'><img src={iconCriar} width='17px'/> Criar Tópico</Button>
       </Container>
       </BoxContent>
-      <Container paddingBottom='2vh'>
-          <BoxOpacity>
-            <BoxImages>
-              <img src={check} width='30px' />
-            </BoxImages>
-          <BoxTitle>
-            <Text variant='primaryBold'>Aguardando feedback dos autores</Text>
-          </BoxTitle>
-          <Container>
-            <Text variant='link'>Editar Tópico</Text>
-          </Container>
-          </BoxOpacity>
-          <BoxDetails>
-            <BoxTitle>
-              <Text variant='title'>Assunto da pergunta aparece aqui</Text>
-            </BoxTitle>
-            <BoxTextComment>
-              <Text>Carlos Henrique Santos</Text>
-
-              <Text>Comecinho da pergunta aparece aqui resente relato inscreve-se
-                no campo da análise da dimensão e impacto de processo formativo
-                situado impacto de processo formativo processo...</Text>
-            </BoxTextComment>
-          </BoxDetails>
-        </Container>
     </Container>
   )
 }
