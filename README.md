@@ -4,7 +4,7 @@
 
 Projeto desenvolvido referente ao processo seletivo da [Chuva](https://chuva.net.br/) , para estágio de front-end 2022.
 
-- [Hortinja](#hortinja)
+- [Slaca](#slaca)
   - [Layout](#layout)
   - [Tecnologias](#tecnologias)
   - [Inicializando](#inicializando)
